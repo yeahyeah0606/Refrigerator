@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/title">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/buttonback"
+            android:id="@+id/imageView21"
+            android:layout_weight="0.5"
+            android:layout_gravity="center"
+            android:contentDescription="@string/back" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/regi_title"
+            android:id="@+id/imageView22"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:layout_marginRight="50dp"
+            android:contentDescription="@string/title"
+            tools:ignore="RtlHardcoded" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="10dp"
+        android:layout_marginTop="25dp">
+
+        <TextView
+            android:text="@string/account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView"
+            android:layout_weight="1"
+            android:textSize="30sp"
+            android:padding="10dp" />
+
+        <EditText
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/username"
+            android:layout_weight="1"
+            android:background="@drawable/regi_input"
+            android:layout_gravity="center"
+            tools:ignore="LabelFor" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="15dp"
+        android:padding="10dp">
+
+        <TextView
+            android:text="@string/password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView8"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:textSize="30sp" />
+
+        <EditText
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/password"
+            android:layout_weight="1"
+            android:background="@drawable/regi_input"
+            android:layout_gravity="center"
+            tools:ignore="LabelFor" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/regi_ok"
+            android:id="@+id/imageViewRegister"
+            android:layout_weight="1"
+            android:contentDescription="@string/ifo"
+            android:padding="10dp"
+            android:layout_marginRight="40dp"
+            tools:ignore="RtlHardcoded" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/regi_no"
+            android:id="@+id/imageView23"
+            android:layout_weight="1"
+            android:contentDescription="@string/ifo"
+            android:padding="10dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="102dp"
+        android:gravity="bottom"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="70dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/loglogword"
+            android:id="@+id/imageView26"
+            android:contentDescription="@string/ifo"
+            tools:ignore="InefficientWeight"
+            android:layout_gravity="bottom" />
+    </LinearLayout>
+
+</LinearLayout>

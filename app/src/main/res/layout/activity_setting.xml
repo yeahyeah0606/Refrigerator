@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/title">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/buttonback"
+            android:id="@+id/imageViewBack"
+            android:layout_weight="0.5"
+            android:layout_gravity="center"
+            android:contentDescription="@string/back" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/set_title"
+            android:id="@+id/imageView3"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:layout_marginRight="50dp"
+            android:contentDescription="@string/title"
+            tools:ignore="RtlHardcoded" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="40dp">
+
+        <TextView
+            android:text="@string/reach_ifo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2"
+            android:layout_weight="1"
+            android:textSize="24sp" />
+
+        <Spinner
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner"
+            android:layout_weight="1"
+            android:gravity="center_vertical|center" />
+
+        <TextView
+            android:text="@string/day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView3"
+            android:layout_weight="1"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp">
+
+        <TextView
+            android:text="@string/bar_ifo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView4"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textSize="24sp"
+            android:layout_marginRight="5dp"
+            tools:ignore="RtlHardcoded" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:checkedButton="@+id/radioButton2">
+
+            <RadioButton
+                android:text="@string/yes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioButton2"
+                android:layout_weight="1"
+                android:layout_marginRight="15dp"
+                tools:ignore="MissingPrefix,RtlHardcoded"
+                android:textColorLink="?android:attr/textColorSecondaryNoDisable"
+                android:textColor="?android:attr/textColorTertiary"
+                app:buttonTint="?android:attr/textColorTertiary"
+                android:textSize="24sp" />
+
+            <RadioButton
+                android:text="@string/no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioButton"
+                android:layout_weight="1"
+                android:textColorLink="?android:attr/textColorPrimaryNoDisable"
+                android:textColor="?android:attr/textColorTertiary"
+                android:textSize="24sp" />
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <TextView
+        android:text="@string/question_report"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView5"
+        android:textSize="24sp"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="65dp"
+        tools:ignore="RtlHardcoded" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        tools:ignore="RtlHardcoded">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/editText"
+            android:background="@drawable/set_input"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:contentDescription="@string/fri_icon"
+            tools:ignore="InefficientWeight,LabelFor" />
+
+        <Button
+            android:id="@+id/button"
+            android:textAlignment="center"
+            android:layout_gravity="right"
+            android:background="@drawable/send_button"
+            android:layout_height="25dp"
+            android:text="@string/send"
+            tools:ignore="RtlHardcoded"
+            android:layout_weight="1"
+            android:layout_width="50dp"
+            android:gravity="center"
+            android:layout_marginTop="5dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:paddingTop="40dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/setword"
+            android:id="@+id/imageView14"
+            android:layout_gravity="center"
+            android:contentDescription="@string/ifo"
+            tools:ignore="RtlHardcoded" />
+    </LinearLayout>
+
+</LinearLayout>

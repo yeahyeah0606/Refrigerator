@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.mark.Super_R">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Friend" />
+        <activity android:name=".Allfood" />
+        <activity android:name=".Refrigerator" />
+        <activity android:name=".Setting" />
+        <activity android:name=".Search" />
+        <activity android:name=".Login" />
+        <activity android:name=".Register" />
+        <activity android:name=".Refrigerator_RightTop" />
+        <activity android:name=".Refrigerator_LeftTop" />
+        <activity android:name=".Refrigerator_RightBot" />
+        <activity android:name=".Refrigerator_LeftBot" />
+        <activity android:name=".Locat" />
+        <activity android:name=".LocatRB" />
+        <activity android:name=".LocatLT" />
+        <activity android:name=".LocatLB" />
+
+        <receiver android:name=".AlarmReceiver">
+            <intent-filter>
+                <action android:name="android.media.action.DISPLAY_NOTIFICATION" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+
+    </application>
+
+</manifest>

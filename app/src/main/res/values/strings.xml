@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Refrigerator</string>
+    <string name="friend">friend</string>
+    <string name="allfood">allfood</string>
+    <string name="refrigerator">refrigerator</string>
+    <string name="setting">setting</string>
+    <string name="superman">superman</string>
+    <string name="back">back</string>
+    <string name="title">title</string>
+    <string name="ifo">ifo</string>
+    <string name="fri_icon">fri_icon</string>
+    <string name="reach_ifo">到期通知:</string>
+    <string name="day">天前</string>
+    <string name="yes">是</string>
+    <string name="no">否</string>
+    <string name="bar_ifo">狀態列通知:</string>
+    <string name="question_report">問題回報:</string>
+    <string name="send">傳送</string>
+    <string name="account">帳號:</string>
+    <string name="password">密碼:</string>
+    <string name="search_title">search_title</string>
+    <string-array name="days">
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+    </string-array>
+</resources>
